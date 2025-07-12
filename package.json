@@ -1,9 +1,9 @@
 {
-  "name": "gruvbox-concoctis",
-  "displayName": "Gruvbox Concoctis",
+  "name": "gruvbox-concoctis-agility6",
+  "displayName": "Gruvbox Concoctis by Agility6",
   "description": "Concoction of Gruvbox themes",
-  "version": "10.30.27",
-  "publisher": "wheredoesyourmindgo",
+  "version": "2.1.0",
+  "publisher": "agility6",
   "icon": "images/logo.png",
   "activationEvents": [
     "*"
@@ -13,12 +13,12 @@
     "vscode": "^1.43.0"
   },
   "galleryBanner": {
-    "color": "#2a2827",
+    "color": "#000000",
     "theme": "dark"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wheredoesyourmindgo/gruvbox-concoctis"
+    "url": "https://github.com/AnnularLabs/gruvbox-concoctis-vscode-theme"
   },
   "scripts": {
     "build:ts": "tsc -p src",
@@ -45,34 +45,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "gruvboxConcoctis dark medium",
-        "uiTheme": "vs-dark",
-        "path": "./themes/darkMedium.json"
-      },
-      {
-        "label": "gruvboxConcoctis light medium",
-        "uiTheme": "vs",
-        "path": "./themes/lightMedium.json"
-      },
-      {
-        "label": "gruvboxConcoctis dark soft",
-        "uiTheme": "vs-dark",
-        "path": "./themes/darkSoft.json"
-      },
-      {
-        "label": "gruvboxConcoctis light soft",
-        "uiTheme": "vs",
-        "path": "./themes/lightSoft.json"
-      },
-      {
         "label": "gruvboxConcoctis dark hard",
         "uiTheme": "vs-dark",
         "path": "./themes/darkHard.json"
-      },
-      {
-        "label": "gruvboxConcoctis light hard",
-        "uiTheme": "vs",
-        "path": "./themes/lightHard.json"
       }
     ],
     "configuration": {
@@ -93,9 +68,7 @@
           "default": "material",
           "description": "The color palette used in all variants.",
           "enum": [
-            "material",
-            "mix",
-            "original"
+            "material"
           ]
         },
         "gruvboxConcoctis.selectionColor": {
@@ -120,8 +93,8 @@
   "dependencies": {},
   "__metadata": {
     "id": "",
-    "publisherId": "wheredoesyourmindgo",
-    "publisherDisplayName": "wheredoesyourmindgo"
+    "publisherId": "agility6",
+    "publisherDisplayName": "agility6"
   },
   "devDependencies": {
     "@types/node": "^13.11.0",

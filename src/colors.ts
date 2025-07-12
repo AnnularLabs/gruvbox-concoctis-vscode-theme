@@ -1,4 +1,4 @@
-import {getPalette} from './palette'
+import { getPalette } from './palette'
 
 function producePalette(palette) {
   return {
@@ -22,19 +22,9 @@ function producePalette(palette) {
 
 export function getColors() {
   const {
-    lightMediumPalette,
-    darkMediumPalette,
-    darkSoftPalette,
-    lightSoftPalette,
-    lightHardPalette,
     darkHardPalette
   } = getPalette()
   return {
-    darkMedium: producePalette(darkMediumPalette),
-    lightMedium: producePalette(lightMediumPalette),
-    darkSoft: producePalette(darkSoftPalette),
-    lightSoft: producePalette(lightSoftPalette),
-    darkHard: producePalette(darkHardPalette),
-    lightHard: producePalette(lightHardPalette)
+    darkHard: producePalette(darkHardPalette)
   }
 }

@@ -1,73 +1,12 @@
 import Utils from '../utils'
-import darkMediumMatPalette from './material/darkMedium'
-import lightMediumMatPalette from './material/lightMedium'
-import darkSoftMatPalette from './material/darkSoft'
-import lightSoftMatPalette from './material/lightSoft'
 import darkHardMatPalette from './material/darkHard'
-import lightHardMatPalette from './material/lightHard'
-import darkMediumMixPalette from './mix/darkMedium'
-import lightMediumMixPalette from './mix/lightMedium'
-import darkSoftMixPalette from './mix/darkSoft'
-import lightSoftMixPalette from './mix/lightSoft'
-import darkHardMixPalette from './mix/darkHard'
-import lightHardMixPalette from './mix/lightHard'
-import darkMediumOrigPalette from './original/darkMedium'
-import lightMediumOrigPalette from './original/lightMedium'
-import darkSoftOrigPalette from './original/darkSoft'
-import lightSoftOrigPalette from './original/lightSoft'
-import darkHardOrigPalette from './original/darkHard'
-import lightHardOrigPalette from './original/lightHard'
 
 export function getPalette() {
   const utils = new Utils()
-
   const config = utils.getConfiguration()
-  const {selectionColor, usePalette} = config
+  const { selectionColor } = config
 
-  if (usePalette === 'original') {
-    return {
-      darkMediumPalette: {
-        ...darkMediumOrigPalette,
-        selectionColor
-      },
-      darkSoftPalette: {
-        ...darkSoftOrigPalette,
-        selectionColor
-      },
-      darkHardPalette: {
-        ...darkHardOrigPalette,
-        selectionColor
-      },
-      lightMediumPalette: {
-        ...lightMediumOrigPalette,
-        selectionColor
-      },
-      lightSoftPalette: {
-        ...lightSoftOrigPalette,
-        selectionColor
-      },
-      lightHardPalette: {
-        ...lightHardOrigPalette,
-        selectionColor
-      }
-    }
-  } else if (usePalette === 'mix') {
-    return {
-      darkMediumPalette: {...darkMediumMixPalette, selectionColor},
-      darkSoftPalette: {...darkSoftMixPalette, selectionColor},
-      darkHardPalette: {...darkHardMixPalette, selectionColor},
-      lightMediumPalette: {...lightMediumMixPalette, selectionColor},
-      lightSoftPalette: {...lightSoftMixPalette, selectionColor},
-      lightHardPalette: {...lightHardMixPalette, selectionColor}
-    }
-  } else {
-    return {
-      darkMediumPalette: {...darkMediumMatPalette, selectionColor},
-      darkSoftPalette: {...darkSoftMatPalette, selectionColor},
-      darkHardPalette: {...darkHardMatPalette, selectionColor},
-      lightMediumPalette: {...lightMediumMatPalette, selectionColor},
-      lightSoftPalette: {...lightSoftMatPalette, selectionColor},
-      lightHardPalette: {...lightHardMatPalette, selectionColor}
-    }
+  return {
+    darkHardPalette: { ...darkHardMatPalette, selectionColor }
   }
 }
